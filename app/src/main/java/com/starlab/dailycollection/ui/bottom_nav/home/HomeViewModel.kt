@@ -1,16 +1,13 @@
 package com.starlab.dailycollection.ui.bottom_nav.home
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.starlab.dailycollection.logic.base.repository.DCollectionRepository
+import com.starlab.dailycollection.logic.model.DCollection
+class HomeViewModel(private val dCollectionRepository: DCollectionRepository) : ViewModel() {
 
-class HomeViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+    val dCollectionLiveData: LiveData<List<DCollection>> = dCollectionRepository.findAll()
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "这是主页信息"
-    }
-
-    val text : LiveData<String> = _text
+    val dCollectionList = ArrayList<DCollection>()
 
 }

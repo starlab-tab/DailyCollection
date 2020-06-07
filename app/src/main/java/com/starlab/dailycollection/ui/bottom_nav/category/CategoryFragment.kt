@@ -2,6 +2,7 @@ package com.starlab.dailycollection.ui.bottom_nav.category
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -30,6 +31,11 @@ class CategoryFragment : Fragment() {
             textView.text = it
         })
         return root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        Log.d("flag123", "789")
     }
 
 

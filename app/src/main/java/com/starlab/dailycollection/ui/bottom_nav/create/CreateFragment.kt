@@ -1,7 +1,9 @@
 package com.starlab.dailycollection.ui.bottom_nav.create
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +12,7 @@ import android.widget.TextView
 import androidx.lifecycle.Observer
 
 import com.starlab.dailycollection.R
+import kotlinx.android.synthetic.main.fragment_create.*
 
 class CreateFragment : Fragment() {
 
@@ -17,19 +20,20 @@ class CreateFragment : Fragment() {
         fun newInstance() = CreateFragment()
     }
 
-    private lateinit var createViewModel: CreateViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        createViewModel = ViewModelProviders.of(this).get(CreateViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_create, container, false)
-        val textView: TextView = root.findViewById(R.id.text_create)
-        createViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-        return root
+        return inflater.inflate(R.layout.fragment_create, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        createBtn.setOnClickListener {
+            val intent = Intent(context, CreateActivity::class.java)
+            activity?.startActivity(intent)
+
+        }
     }
 
 

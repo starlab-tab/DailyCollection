@@ -3,8 +3,8 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="drawer_nav_header_title">Star Lab</string>
-    <string name="drawer_nav_header_subtitle">暂时命名: 生活收藏夹</string>
+    <string name="drawer_nav_header_title">STAR_LAB</string>
+    <string name="drawer_nav_header_subtitle">Cause We Are Young&amp;Beautiful</string>
     <string name="drawer_nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -13,8 +13,31 @@
     <string name="menu_summary">归档</string>
     <string name="menu_outofdate">最近删除</string>
 
+    <string name="bar_search">Search</string>
+    <string name="bar_drawer">Drawer</string>
+
+    <string name="dcollection_delete">删除</string>
+    <string name="dcollection_create">创建</string>
+
+    <string name="story_line">
+
+        故事紧接着上一季继续发展。丹妮莉丝（艾米莉亚·克拉克 Emilia Clarke 饰）率领着她的军师们和无垢者大军终于返回了一切开始的地方——龙石岛，在那里，她同她的盟友们汇合，在提利昂（彼特·丁拉基 Peter Dinklage 饰）的建议下，她飞鸽传书给远在北方的琼恩（基特·哈灵顿 Kit Harington 饰），试图得到他的臣服。
+　　那边厢，瑟曦（琳娜·海蒂 Lena Headey 饰）的武断和残暴令国家陷入了四面楚歌的境地，只有詹姆（尼可拉·科斯特-瓦尔道 Nikolaj Coster-Waldau 饰）依然不离不弃的守候在她的身后。镜头转向北境，琼恩和珊莎（索菲·特纳 Sophie Turner 饰）之间的分歧越来越大，与此同时，他收到了身在大学城的山姆威尔（约翰·布莱德利 John Bradley）的来信，信上说在龙石岛的下面，埋藏着数量巨大的龙晶，这是唯一能够抵挡异鬼入侵的武器。
+
+    </string>
+
+    <string name="dcollection_gallery">相册选择</string>
+    <string name="dcollection_take">拍一张</string>
+
+
     <string name="app_name">DailyCollection</string>
     <string name="title_home">主页</string>
     <string name="title_create">新建</string>
     <string name="title_category">类别</string>
+
+    <string name="search_hint">输入关键字查找</string>
+
+    <drawable name="create_btn_color">#1aad19</drawable>
+    <drawable name="custom_red">#FF0000</drawable>
+
 </resources>
